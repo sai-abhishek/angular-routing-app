@@ -1,0 +1,32 @@
+.student-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.student-list-card {
+  padding: 20px;
+  width: 50%;
+}
+
+.badge {
+  background-color: #ffd740;
+  padding: 10px 15px;
+  margin: 10px 5px;
+  border-radius: 5px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.student-div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.selected {
+  background-color: lightgray;
+  border-radius: 10px;
+}

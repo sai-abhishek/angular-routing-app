@@ -1,0 +1,15 @@
+:host {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.thesis-center-card {
+  margin: 10px;
+  width: 50%;
+  align-self: center;
+  background-color: #673ab7;
+  color: white;
+}

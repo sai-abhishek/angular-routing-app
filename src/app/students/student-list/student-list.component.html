@@ -1,0 +1,18 @@
+<div class="student-list-container">
+  <mat-card class="student-list-card">
+    <mat-selection-list [multiple]="false">
+      <h2>Students</h2>
+      <mat-list-option
+        *ngFor="let student of studentsList$ | async"
+        [class.selected]="student.id === selectedID"
+        [value]="student"
+        routerLink="/students/{{ student.id }}"
+      >
+        <div class="student-div">
+          <div class="badge">{{ student.id }}</div>
+          <div>{{ student.name }}</div>
+        </div>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card>
+</div>

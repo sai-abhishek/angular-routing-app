@@ -1,0 +1,19 @@
+<div class="thesis-list-container">
+  <mat-card class="thesis-list-card">
+    <mat-selection-list [multiple]="false">
+      <h2>List of ongoing/completed thesis projects</h2>
+      <mat-list-option
+        *ngFor="let thesis of thesisList"
+        [class.selected]="thesis.id === selectedID"
+        [value]="thesis"
+        routerLink="/theses/{{ thesis.id }}"
+      >
+        <div class="thesis-div">
+          <div class="badge">{{ thesis.id }}</div>
+          <div>{{ thesis.name }}</div>
+        </div>
+      </mat-list-option>
+    </mat-selection-list>
+  </mat-card>
+  <router-outlet></router-outlet>
+</div>
